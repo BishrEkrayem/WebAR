@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a-scene device-orientation-permission-ui="enabled: false"></a-scene>
+    <title>WebAR Example</title>
+    <!-- Include A-Frame and AR.js -->
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <!-- AR Scene with AR.js enabled -->
+    <a-scene embedded arjs>
+      <!-- The marker that triggers the AR content -->
+      <a-marker preset="hiro">
+        <!-- The 3D object to display -->
+        <a-box position="0 0.5 0" rotation="0 45 0" color="#4CC3D9"></a-box>
+      </a-marker>
+      <!-- The camera view -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>  
+ 
