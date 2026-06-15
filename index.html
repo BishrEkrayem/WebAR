@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a-scene device-orientation-permission-ui="enabled: false"></a-scene>
-    <title>WebAR Example</title>
-    <!-- Include A-Frame and AR.js -->
-    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden;">
-    <h1>Hello Dud</h1>
-    <!-- AR Scene with AR.js enabled -->
-    <a-scene embedded arjs>
-      <!-- The marker that triggers the AR content -->
-      <a-marker preset="hiro">
-        <!-- The 3D object to display -->
-        <a-box position="0 0.5 0" rotation="0 45 0" color="#4CC3D9"></a-box>
-      </a-marker>
-      <!-- The camera view -->
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
-</html>  
- 
+<head>
+	<title>AR.js examples</title>
+	<link rel=stylesheet href="index/index.css"/>
+</head>
+<body>
+
+<div class="bigTitle">AR.js examples</div>
+<hr>
+
+The goal of this collection is to provide a set of basic and instructive examples that introduce the various features in the Javascript-based Augmented Reality (AR) library, 
+<a href="https://github.com/jeromeetienne/AR.js">AR.js</a> (version 2), built upon the <a href="https://aframe.io/">A-Frame</a> and <a href="https://threejs.org/">three.js</a> libraries.
+
+<br/><br/>
+Viewing the AR examples will require a device with a camera and various marker images to be detected, which are available in the <code>markers</code> directory in this repository. Requires the kanji marker unless otherwise specified.
+
+<br/><br/>
+Source code hosted at <a class="toc" href="https://github.com/stemkoski/AR.js-examples">github.com/stemkoski/AR.js-examples</a>.
+
+<hr/>
+
+<table class="fancy"><tr>
+	<td><a href="basic.html"><img src="basic.png" class="superImage" /></a></td>
+	<td class="tableText"><a href="basic.html">Hello, AR World!</a>
+	<p>A basic scene that places plain and textured shapes on markers (kanji, barcodes 0/1/2).</p></td>
+</tr></table>
+
+</body>
+</html>
